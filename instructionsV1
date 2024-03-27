@@ -1,0 +1,30 @@
+import time
+import sys
+
+#function used to print out words letter by letter
+def character_timer(string):  
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.06)
+#function used to print out the instructions
+def instructions():
+    print("Hello User. Welcome to the Area/Perimeter Calculator")
+    print()
+    print("This program is designed to find out the perimeter and the area of your shape")
+    print("Enter the shapes dimensions and the program will output the answers for the area and perimeter")
+    print()
+    print("***The program cannot calculate shapes with fractions as their dimensions***")
+    print()
+
+#used to print out 
+list = [ "- circle\n","- square\n","- rectangle\n","- triangle\n","- parrallelogram\n" ]
+
+#instrutions will be printed here
+instructions()
+#list of shapes will be printed here
+
+print("Shapes that can be calculated are:")
+time.sleep(2)
+character_timer("".join(list))
+
