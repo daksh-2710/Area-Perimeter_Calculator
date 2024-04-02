@@ -1,0 +1,19 @@
+ask_shape = input("What shape do you want to calculate?: ").lower()
+
+if ask_shape == "square":
+    print("sqare")
+elif ask_shape == "triangle":
+    print("triangle")
+elif ask_shape == "circle":
+    print("circle")
+elif ask_shape == "rectangle":
+    print("rectangle")
+elif ask_shape == "parralellogram":
+    print("parralellogram")
+else:
+    print("Please enter a shape from the list below")
+
+
+
+
+

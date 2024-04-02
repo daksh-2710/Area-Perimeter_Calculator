@@ -1,0 +1,25 @@
+def ask_shape(question): 
+    while True:
+        response = input(question).lower()
+
+        if response == "square":
+            return "square"
+        elif response == "triangle":
+            return "triangle"
+        elif response == "circle":
+            return "circle"
+        elif response == "parralellogram":
+            return "parralellogram"
+        elif response == "rectangle":
+            return "rectangle"
+        else:
+            print("Please enter a shape from the list above")
+
+request_shape = ask_shape("What shape: ")
+
+if request_shape == "square":
+    print("square")
+elif request_shape == "triangle":
+    print("triangle")
+else:
+    print("no")
