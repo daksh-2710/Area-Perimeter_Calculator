@@ -17,13 +17,12 @@ def instructions():
     print("***The program cannot calculate shapes with fractions as their dimensions***")
     print()
 
-#used to print out 
+#used to print out the shapes that can be calculated
 list = [ "- circle\n","- square\n","- rectangle\n","- triangle\n","- parrallelogram\n" ]
 
 #instrutions will be printed here
 instructions()
 #list of shapes will be printed here
-
 print("Shapes that can be calculated are:")
 time.sleep(2)
 character_timer("".join(list))
