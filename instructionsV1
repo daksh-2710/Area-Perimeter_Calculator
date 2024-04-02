@@ -6,7 +6,7 @@ def character_timer(string):
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(0.06)
+        time.sleep(0.4)
 #function used to print out the instructions
 def instructions():
     print("Hello User. Welcome to the Area/Perimeter Calculator")
