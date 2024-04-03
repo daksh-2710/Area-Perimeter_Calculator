@@ -21,5 +21,11 @@ if request_shape == "square":
     print("square")
 elif request_shape == "triangle":
     print("triangle")
+elif request_shape == "circle":
+    print("circle")
+elif request_shape == "rectangle":
+    print("rectangle")
+elif request_shape =="parralellogram":
+    print("parralellogram")
 else:
     print("no")
