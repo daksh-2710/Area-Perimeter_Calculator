@@ -15,7 +15,7 @@ def ask_shape(question):
         else:
             print("Please enter a shape from the list above")
 
-request_shape = ask_shape("What shape: ")
+request_shape = ask_shape("What shape do you want to calculate?: ")
 
 if request_shape == "square":
     print("square")
@@ -27,5 +27,3 @@ elif request_shape == "rectangle":
     print("rectangle")
 elif request_shape =="parralellogram":
     print("parralellogram")
-else:
-    print("no")
