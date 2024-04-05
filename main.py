@@ -14,7 +14,7 @@ def instructions():
     print("This program's intended purpose is to calculate a shape's area and perimeter.")
     print("Enter the shapes dimensions (measurements) and the program will output the answers for your shape's area and perimeter.")
     print()
-
+#asks the user for a shape
 def ask_shape(question): 
     while True:
         response = input(question).lower()
@@ -31,6 +31,7 @@ def ask_shape(question):
             return "rectangle"
         else:
             print("Please enter a shape from the list above")
+
 #used to print out the shapes that can be calculated
 list = [ "- Circle\n","- Square\n","- Rectangle\n","- Triangle\n","- Parrallelogram\n" ]
 
@@ -41,6 +42,7 @@ print("These are the shapes that can be calculated:")
 time.sleep(2)
 character_timer("".join(list))
 
+#asks the user what shape they want
 request_shape = ask_shape("What shape do you want to calculate?: ")
 
 if request_shape == "square":
