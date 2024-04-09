@@ -1,22 +1,50 @@
 import math
-def calc_rectangle(length, width):
+def rectangle(length, width):
     area = length * width
-    perimeter = 2 * (length * width)
+    perimeter = 2 * (length + width)
     return area, perimeter
+def square(sides):
+    area = sides * sides
+    perimeter = 4 * (sides)
+    return area, perimeter
+def circle(radius):
+    area = math.pi * radius ** 2
+    perimeter = 2 * math.pi * radius
+    return area, perimeter
+def parallelogram(base, height):
+    area = base * height
+    perimeter = 2 * (base + height)
+    return area, perimeter
+def triangle_area(base, height):
+    area = 1/2 * base * height
+    return area
+def triangle_perimeter(side1, side2, side3):
+    perimeter = side1 + side2 + side3
+    return perimeter
 
-
-
-
-ask = input("What shape:").lower()
+ask = input("What shape: ").lower()
 if ask == "rectangle":
-    ar = float(input("length: "))
-    per = float(input("width: "))
-    area, perimeter = calc_rectangle(ar, per)
-
-
-
-
-
+    lenght = float(input("length: "))
+    width = float(input("width: "))
+    area, perimeter = rectangle(lenght, width)
+elif ask == "square":
+    side = float(input("side: "))
+    area, perimeter = square(side)
+elif ask == "circle":
+    radis = float(input("radius: "))
+    area, perimeter = circle(radis)
+elif ask == "parallelogram":
+    bas = float(input("base: "))
+    heigh = float(input("height: "))
+    area, perimeter = parallelogram(bas, heigh)
+elif ask == "triangle":
+    base = float(input("base: "))
+    height = float(input("height: "))
+    side1 = float(input("side1: "))
+    side2 = float(input("side2: "))
+    side3 = float(input("side3: "))
+    area = triangle_area(base, height)
+    perimeter = triangle_perimeter(side1, side2, side3)
 
 print("Area: ",area)
 print("Perimeter: ", perimeter)

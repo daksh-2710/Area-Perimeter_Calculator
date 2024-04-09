@@ -1,6 +1,7 @@
 import math
-
+#asks the user for what shape
 ask = input("What shape:").lower()
+#calculates rectangle
 if ask == "rectangle":
     r1 = float(input("Enter length: "))
     r2 = float(input("Enter width: "))
@@ -8,6 +9,7 @@ if ask == "rectangle":
     r_perimeter = 2 * (r1 + r2)
     print(f"Area: {r_area}")
     print(f"Perimeter: {r_perimeter}")
+#calculate square
 elif ask == "square":
     s1 = float(input("Enter side: "))
     s_area = s1 * s1
