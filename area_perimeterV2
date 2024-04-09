@@ -1,0 +1,22 @@
+import math
+def calc_rectangle(length, width):
+    area = length * width
+    perimeter = 2 * (length * width)
+    return area, perimeter
+
+
+
+
+ask = input("What shape:").lower()
+if ask == "rectangle":
+    ar = float(input("length: "))
+    per = float(input("width: "))
+    area, perimeter = calc_rectangle(ar, per)
+
+
+
+
+
+
+print("Area: ",area)
+print("Perimeter: ", perimeter)

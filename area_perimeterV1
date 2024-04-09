@@ -2,10 +2,43 @@ import math
 
 ask = input("What shape:").lower()
 if ask == "rectangle":
-    n1 = float(input("Length: "))
-    n2 = float(input("Width: "))
-    area = n1 * n2
-    perimter = 2 * (n1 + n2)
+    r1 = float(input("Enter length: "))
+    r2 = float(input("Enter width: "))
+    r_area = r1 * r2
+    r_perimeter = 2 * (r1 + r2)
+    print(f"Area: {r_area}")
+    print(f"Perimeter: {r_perimeter}")
+elif ask == "square":
+    s1 = float(input("Enter side: "))
+    s_area = s1 * s1
+    s_perimeter = 4 * (s1)
+    print(f"Area: {s_area}")
+    print(f"Perimeter: {s_perimeter}")
+elif ask == "circle":
+    c1 = float(input("Enter radius: "))
+    c_area = math.pi * c1 ** 2
+    c_perimeter = 2 * math.pi  * c1
+    print(f"Area: {c_area}")
+    print(f"Perimeter: {c_perimeter}")
+elif ask == "triangle":
+    t1 = float(input("Enter base: "))
+    t2 = float(input("Enter height: "))
+    t3 = float(input("Enter side 1: "))
+    t4 = float(input("Enter side 2: "))
+    t5 = float(input("Enter side 3"))
+    t_area = 1/2 * t1 * t2
+    t_perimeter = t3 + t4 + t5
+    print(f"Area: {t_area}")
+    print(f"Perimeter: {t_perimeter}")
+elif ask == "parallelogram":
+    p1 = float(input("Enter base: "))
+    p2 = float(input("Enter height: "))
+    p_area = p1 * p2
+    p_perimeter = 2 * (p1 + p2)
+    print(f"Area: {p_area}")
+    print(f"Perimeter: {p_perimeter}")
+else:
+    print("No")
 
-print(perimter)
-print(area)
+
+
