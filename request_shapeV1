@@ -1,5 +1,7 @@
+#asks the user what shape they want
 ask_shape = input("What shape do you want to calculate?: ").lower()
 
+#prints out the shape name for whatever shape the user enters from the list
 if ask_shape == "square":
     print("square")
 elif ask_shape == "triangle":
@@ -12,6 +14,7 @@ elif ask_shape == "parralellogram":
     print("parralellogram")
 else:
     print("Please enter a shape from the list above")
+    #complains if the user does not enter a shape from the list
 
 
 

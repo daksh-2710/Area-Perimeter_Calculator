@@ -1,3 +1,4 @@
+#function used to ask for which shape.
 def ask_shape(question): 
     while True:
         response = input(question).lower()

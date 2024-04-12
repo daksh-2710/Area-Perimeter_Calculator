@@ -1,5 +1,6 @@
-import time
-import sys
+import time 
+import sys 
+import math
 
 #function used to print out words letter by letter
 def character_timer(string):  
@@ -31,6 +32,29 @@ def ask_shape(question):
             return "rectangle"
         else:
             print("Please enter a shape from the list above")
+#all shapes formulas to calculate the area and perimeter
+def rectangle(length, width):
+    area = length * width
+    perimeter = 2 * (length + width)
+    return area, perimeter
+def square(sides):
+    area = sides * sides
+    perimeter = 4 * (sides)
+    return area, perimeter
+def circle(radius):
+    area = math.pi * radius ** 2
+    perimeter = 2 * math.pi * radius
+    return area, perimeter
+def parallelogram(base, height):
+    area = base * height
+    perimeter = 2 * (base + height)
+    return area, perimeter
+def triangle_area(base, height):
+    area = 1/2 * base * height
+    return area
+def triangle_perimeter(side1, side2, side3):
+    perimeter = side1 + side2 + side3
+    return perimeter
 
 #used to print out the shapes that can be calculated
 list = [ "- Circle\n","- Square\n","- Rectangle\n","- Triangle\n","- Parrallelogram\n" ]
@@ -46,15 +70,33 @@ character_timer("".join(list))
 request_shape = ask_shape("What shape do you want to calculate?: ")
 
 if request_shape == "square":
-    print("square")
+    side = float(input("Enter side: "))
+    area, perimeter = square(side)
+    print()
 elif request_shape == "triangle":
-    print("triangle")
+    print("--For Area--")
+    base = float(input("Enter base: "))
+    height = float(input("Enter height: "))
+    print("--For Perimeter--")
+    side1 = float(input("Enter side 1: "))
+    side2 = float(input("Enter side 2: "))
+    side3 = float(input("Enter side 3: "))
+    area = triangle_area(base, height)
+    perimeter = triangle_perimeter(side1, side2, side3)
+    print()
 elif request_shape == "circle":
-    print("circle")
+    radius = float(input("Enter radius: "))
+    area, perimeter = circle(radius)
+    print()
 elif request_shape == "rectangle":
-    print("rectangle")
+    lenght = float(input("Enter length: "))
+    width = float(input("Enter width: "))
+    area, perimeter = rectangle(lenght, width)
+    print()
 elif request_shape =="parralellogram":
-    print("parralellogram")
+    bas = float(input("Enter base: "))
+    heigh = float(input("Enter height: "))
+    area, perimeter = parallelogram(bas, heigh)
 
 
 
