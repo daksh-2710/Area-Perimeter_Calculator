@@ -57,7 +57,7 @@ def triangle_perimeter(side1, side2, side3):
     return perimeter
 
 #used to print out the shapes that can be calculated
-list = [ "- Circle\n","- Square\n","- Rectangle\n","- Triangle\n","- Parrallelogram\n" ]
+list = [ "- Circle\n","- Square\n","- Rectangle\n","- Triangle\n","- Parallelogram\n" ]
 
 #instrutions will be printed here
 instructions()
@@ -93,16 +93,11 @@ elif request_shape == "rectangle":
     width = float(input("Enter width: "))
     area, perimeter = rectangle(lenght, width)
     print()
-elif request_shape =="parralellogram":
+elif request_shape =="paralellogram":
     bas = float(input("Enter base: "))
     heigh = float(input("Enter height: "))
     area, perimeter = parallelogram(bas, heigh)
 
-
-
-
-
-
-
-
-
+print("---Your Answers---")
+print("Area: ", area)
+print("Perimeter: ", perimeter)
