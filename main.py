@@ -32,7 +32,7 @@ def ask_shape(question):
             return "rectangle"
         else:
             print("Please enter a shape from the list above")
-#all shapes formulas to calculate the area and perimeter
+#shapes area and perimeter formulas
 def rectangle(length, width):
     area = length * width
     perimeter = 2 * (length + width)
@@ -56,7 +56,7 @@ def triangle_perimeter(side1, side2, side3):
     perimeter = side1 + side2 + side3
     return perimeter
 
-#used to print out the shapes that can be calculated
+#list of shapes that are able to be calculated
 list = [ "- Circle\n","- Square\n","- Rectangle\n","- Triangle\n","- Parallelogram\n" ]
 
 #instrutions will be printed here
@@ -101,6 +101,7 @@ elif request_shape =="parallelogram":
 
 #outputs the answers for area and perimeter
 character_timer(f"Your {request_shape}'s area is {area} and its perimeter is {perimeter}")
+print()
 print()
 print("---Answers---")
 print("Area: ", area)
