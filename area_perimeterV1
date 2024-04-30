@@ -23,8 +23,10 @@ elif ask == "circle":
     print(f"Area: {c_area}")
     print(f"Perimeter: {c_perimeter}")
 elif ask == "triangle":
+    print("--For Area--")
     t1 = float(input("Enter base: "))
     t2 = float(input("Enter height: "))
+    print("--For Perimeter--")
     t3 = float(input("Enter side 1: "))
     t4 = float(input("Enter side 2: "))
     t5 = float(input("Enter side 3"))
