@@ -26,8 +26,8 @@ def ask_shape(question):
             return "triangle"
         elif response == "circle":
             return "circle"
-        elif response == "parralellogram":
-            return "parralellogram"
+        elif response == "parallelogram":
+            return "parallelogram"
         elif response == "rectangle":
             return "rectangle"
         else:
@@ -93,11 +93,15 @@ elif request_shape == "rectangle":
     width = float(input("Enter width: "))
     area, perimeter = rectangle(lenght, width)
     print()
-elif request_shape =="paralellogram":
+elif request_shape =="parallelogram":
     bas = float(input("Enter base: "))
     heigh = float(input("Enter height: "))
     area, perimeter = parallelogram(bas, heigh)
+    print()
 
-print("---Your Answers---")
+#outputs the answers for area and perimeter
+character_timer(f"Your {request_shape}'s area is {area} and its perimeter is {perimeter}")
+print()
+print("---Answers---")
 print("Area: ", area)
 print("Perimeter: ", perimeter)
