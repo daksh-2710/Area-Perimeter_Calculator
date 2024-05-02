@@ -2,6 +2,7 @@ import time
 import sys 
 import math
 
+#Functions
 #function used to print out words letter by letter
 def character_timer(string):  
     for char in string:
@@ -45,9 +46,9 @@ def circle(radius):
     area = math.pi * radius ** 2
     perimeter = 2 * math.pi * radius
     return area, perimeter
-def parallelogram(base, height):
+def parallelogram(base, height, side):
     area = base * height
-    perimeter = 2 * (base + height)
+    perimeter = 2 * (base + side)
     return area, perimeter
 def triangle_area(base, height):
     area = 1/2 * base * height
@@ -56,6 +57,7 @@ def triangle_perimeter(side1, side2, side3):
     perimeter = side1 + side2 + side3
     return perimeter
 
+#Main Routine 
 #list of shapes that are able to be calculated
 list = [ "- Circle\n","- Square\n","- Rectangle\n","- Triangle\n","- Parallelogram\n" ]
 
@@ -65,6 +67,7 @@ instructions()
 print("These are the shapes that can be calculated:")
 time.sleep(2)
 character_timer("".join(list))
+print()
 
 #asks the user what shape they want
 request_shape = ask_shape("What shape do you want to calculate?: ")
@@ -96,7 +99,8 @@ elif request_shape == "rectangle":
 elif request_shape =="parallelogram":
     bas = float(input("Enter base: "))
     heigh = float(input("Enter height: "))
-    area, perimeter = parallelogram(bas, heigh)
+    sidep = float(input("Enter side: "))
+    area, perimeter = parallelogram(bas, heigh, sidep)
     print()
 
 #outputs the answers for area and perimeter

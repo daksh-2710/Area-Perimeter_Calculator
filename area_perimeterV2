@@ -11,9 +11,9 @@ def circle(radius):
     area = math.pi * radius ** 2
     perimeter = 2 * math.pi * radius
     return area, perimeter
-def parallelogram(base, height):
+def parallelogram(base, height, side):
     area = base * height
-    perimeter = 2 * (base + height)
+    perimeter = 2 * (base + side)
     return area, perimeter
 def triangle_area(base, height):
     area = 1/2 * base * height
@@ -39,7 +39,8 @@ elif ask == "circle":
 elif ask == "parallelogram":
     bas = float(input("Enter base: "))
     heigh = float(input("Enter height: "))
-    area, perimeter = parallelogram(bas, heigh)
+    sidep = float(input("Enter Side: "))
+    area, perimeter = parallelogram(bas, heigh, sidep)
     print()
 elif ask == "triangle":
     print("--For Area--")

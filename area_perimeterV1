@@ -9,19 +9,21 @@ if ask == "rectangle":
     r_perimeter = 2 * (r1 + r2)
     print(f"Area: {r_area}")
     print(f"Perimeter: {r_perimeter}")
-#calculate square
+#calculates square
 elif ask == "square":
     s1 = float(input("Enter side: "))
     s_area = s1 * s1
     s_perimeter = 4 * (s1)
     print(f"Area: {s_area}")
     print(f"Perimeter: {s_perimeter}")
+#calculates circle
 elif ask == "circle":
     c1 = float(input("Enter radius: "))
     c_area = math.pi * c1 ** 2
     c_perimeter = 2 * math.pi  * c1
     print(f"Area: {c_area}")
     print(f"Perimeter: {c_perimeter}")
+#calculates triangle
 elif ask == "triangle":
     print("--For Area--")
     t1 = float(input("Enter base: "))
@@ -34,11 +36,13 @@ elif ask == "triangle":
     t_perimeter = t3 + t4 + t5
     print(f"Area: {t_area}")
     print(f"Perimeter: {t_perimeter}")
+#calculates parallelogram
 elif ask == "parallelogram":
     p1 = float(input("Enter base: "))
     p2 = float(input("Enter height: "))
+    p3 = float(input("Enter side: "))
     p_area = p1 * p2
-    p_perimeter = 2 * (p1 + p2)
+    p_perimeter = 2 * (p1 + p3)
     print(f"Area: {p_area}")
     print(f"Perimeter: {p_perimeter}")
 else:
