@@ -70,7 +70,9 @@ character_timer("".join(list))
 print()
 
 #asks the user what shape they want
+
 request_shape = ask_shape("What shape do you want to calculate?: ")
+
 
 if request_shape == "square":
     side = float(input("Enter side: "))
@@ -103,6 +105,7 @@ elif request_shape =="parallelogram":
     area, perimeter = parallelogram(bas, heigh, sidep)
     print()
 
+
 #outputs the answers for area and perimeter
 character_timer(f"Your {request_shape}'s area is {area} and its perimeter is {perimeter}")
 print()
@@ -110,3 +113,5 @@ print()
 print("---Answers---")
 print("Area: ", area)
 print("Perimeter: ", perimeter)
+
+   
