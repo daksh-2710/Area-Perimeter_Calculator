@@ -106,7 +106,8 @@ elif request_shape =="parallelogram":
     print()
 
 
-#outputs the answers for area and perimeter
+#outputs the answers for area and perimeter'
+character_timer("Your {}'s area is {:.2f} and its perimeter is {:.2f}".format(request_shape, area, perimeter))
 character_timer(f"Your {request_shape}'s area is {area} and its perimeter is {perimeter}")
 print()
 print()
