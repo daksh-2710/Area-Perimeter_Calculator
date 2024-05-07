@@ -1,0 +1,40 @@
+import math
+import sys
+import time
+
+def circle(radius):
+    area = math.pi * radius ** 2
+    perimeter = 2 * math.pi * radius
+    return area, perimeter
+def character_timer(string):  
+    for char in string:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.06)
+def rectangle(length, width):
+    area = length * width
+    perimeter = 2 * (length + width)
+    return area, perimeter
+def square(sides):
+    area = sides * sides
+    perimeter = 4 * (sides)
+    return area, perimeter
+
+ask = input("Enter shape: ").lower()
+
+if  ask == "circle":
+    radius = float(input("Enter radius: "))
+    area, perimeter = circle(radius)
+    print()
+elif ask == "square":
+    side = float(input("Enter side: "))
+    area, perimeter = square(side)
+    print()
+elif ask == "rectangle":
+    lenght = float(input("Enter length: "))
+    width = float(input("Enter width: "))
+    area, perimeter = rectangle(lenght, width)
+    print()
+
+
+character_timer(f"Your {ask}'s area is {area} and its perimeter is {perimeter}")
