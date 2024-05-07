@@ -70,9 +70,7 @@ character_timer("".join(list))
 print()
 
 #asks the user what shape they want
-
 request_shape = ask_shape("What shape do you want to calculate?: ")
-
 
 if request_shape == "square":
     side = float(input("Enter side: "))
@@ -115,3 +113,4 @@ print("Area: {:.2f}".format(area))
 print("Perimeter: {:.2f}".format(perimeter))
 
    
+
