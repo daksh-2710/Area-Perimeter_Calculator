@@ -96,7 +96,7 @@ elif request_shape == "rectangle":
     width = float(input("Enter width: "))
     area, perimeter = rectangle(lenght, width)
     print()
-elif request_shape =="parallelogram":
+elif request_shape == "parallelogram":
     bas = float(input("Enter base: "))
     heigh = float(input("Enter height: "))
     sidep = float(input("Enter side: "))
