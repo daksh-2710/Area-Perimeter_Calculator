@@ -108,11 +108,10 @@ elif request_shape =="parallelogram":
 
 #outputs the answers for area and perimeter'
 character_timer("Your {}'s area is {:.2f} and its perimeter is {:.2f}".format(request_shape, area, perimeter))
-character_timer(f"Your {request_shape}'s area is {area} and its perimeter is {perimeter}")
 print()
 print()
 print("---Answers---")
-print("Area: ", area)
-print("Perimeter: ", perimeter)
+print("Area: {:.2f}".format(area))
+print("Perimeter: {:.2f}".format(perimeter))
 
    
