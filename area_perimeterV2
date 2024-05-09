@@ -21,6 +21,10 @@ def triangle_area(base, height):
 def triangle_perimeter(side1, side2, side3):
     perimeter = side1 + side2 + side3
     return perimeter
+def trapezium(base1, base2, side1, side2, height):
+    area = 1/2 * (base1 + base2) * height
+    perimeter = base1 + base2 + side1 + side2
+    return area, perimeter
 
 ask = input("What shape: ").lower()
 if ask == "rectangle":
@@ -52,6 +56,14 @@ elif ask == "triangle":
     side3 = float(input("Enter side 3: "))
     area = triangle_area(base, height)
     perimeter = triangle_perimeter(side1, side2, side3)
+    print()
+elif ask == "trapezium":
+    tbase1 = float(input("Enter base 1: "))
+    tbase2 = float(input("Enter base 2: "))
+    tside1 = float(input("Enter side 1: "))
+    tside2 = float(input("Enter side 2: "))
+    theight = float(input("Enter height: "))
+    area, perimeter = trapezium(tbase1, tbase2, tside1, tside2, theight)
     print()
 
 print("---Your Answers---")

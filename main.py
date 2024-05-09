@@ -56,10 +56,13 @@ def triangle_area(base, height):
 def triangle_perimeter(side1, side2, side3):
     perimeter = side1 + side2 + side3
     return perimeter
-
+def trapezium(base1, base2, side1, side2, height):
+    area = 1/2 * (base1 + base2) * height
+    perimeter = base1 + base2 + side1 + side2
+    return area, perimeter
 #Main Routine 
 #list of shapes that are able to be calculated
-list = [ "- Circle\n","- Square\n","- Rectangle\n","- Triangle\n","- Parallelogram\n" ]
+list = [ "- Circle\n","- Square\n","- Rectangle\n","- Triangle\n","- Parallelogram\n","- Trapezium\n" ]
 
 #instrutions will be printed here
 instructions()
@@ -102,7 +105,14 @@ elif request_shape == "parallelogram":
     sidep = float(input("Enter side: "))
     area, perimeter = parallelogram(bas, heigh, sidep)
     print()
-
+elif request_shape == "trapezium":
+    tbase1 = float(input("Enter base 1: "))
+    tbase2 = float(input("Enter base 2: "))
+    tside1 = float(input("Enter side 1: "))
+    tside2 = float(input("Enter side 2: "))
+    theight = float(input("Enter height: "))
+    area, perimeter = trapezium(tbase1, tbase2, tside1, tside2, theight)
+    print()
 
 #outputs the answers for area and perimeter'
 character_timer("Your {}'s area is {:.2f} and its perimeter is {:.2f}".format(request_shape, area, perimeter))

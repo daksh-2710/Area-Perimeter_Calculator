@@ -45,6 +45,16 @@ elif ask == "parallelogram":
     p_perimeter = 2 * (p1 + p3)
     print(f"Area: {p_area}")
     print(f"Perimeter: {p_perimeter}")
+elif ask == "trapezium":
+    tr1 = float(input("Enter side 1: "))
+    tr2 = float(input("Enter side 2: "))
+    tr3 = float(input("Enter base 1:"))
+    tr4 = float(input("Enter base 2: "))
+    tr5 = float(input("Enter height: "))
+    tr_area = 1/2 * (tr3 + tr4) * tr5
+    tr_perimeter = tr1 + tr2 + tr3 + tr4
+    print(f"Area: {tr_area}")
+    print(f"Perimeter: {tr_perimeter}")
 else:
     print("No")
 
