@@ -16,7 +16,7 @@ def instructions():
     print()
 
 #used to print out the shapes that can be calculated
-list = [ "- Circle\n","- Square\n","- Rectangle\n","- Triangle\n","- Parrallelogram\n" ]
+list = [ "- Circle\n","- Square\n","- Rectangle\n","- Triangle\n","- Parallelogram\n","- Trapezium\n" ]
 
 #instrutions will be printed here
 instructions()
