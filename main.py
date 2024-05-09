@@ -31,6 +31,8 @@ def ask_shape(question):
             return "parallelogram"
         elif response == "rectangle":
             return "rectangle"
+        elif response == "trapezium":
+            return "trapezium"
         else:
             print("Please enter a shape from the list above")
 #shapes area and perimeter formulas
