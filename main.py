@@ -76,7 +76,7 @@ print()
 
 #asks the user what shape they want
 request_shape = ask_shape("What shape do you want to calculate?: ")
-
+#shapes get calculated here
 if request_shape == "square":
     side = float(input("Enter side: "))
     area, perimeter = square(side)
